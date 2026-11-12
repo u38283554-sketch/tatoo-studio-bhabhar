@@ -1,0 +1,6 @@
+{
+  "name": "Tattoo Studio Bhabhar",
+  "description": "Premium custom tattoo studio in Bhabhar, Gujarat. Fine-line lettering, portraits, devotional art, and safe hygienic tattooing.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

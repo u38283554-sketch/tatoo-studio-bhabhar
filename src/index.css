@@ -1,0 +1,71 @@
+@import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@layer base {
+  :root {
+    --font-display: 'Bebas Neue', sans-serif;
+    --font-serif-luxury: 'Playfair Display', Georgia, serif;
+    --font-body: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+    --font-gujarati: 'Noto Sans Gujarati', 'Plus Jakarta Sans', sans-serif;
+    --color-studio-black: #0a0a0a;
+    --color-studio-dark: #121212;
+    --color-studio-card: #18181b;
+    --color-studio-red: #b11226;
+    --color-studio-red-hover: #cf142f;
+    --color-studio-silver: #d4d4d8;
+  }
+
+  body {
+    background-color: var(--color-studio-black);
+    color: #e4e4e7;
+    font-family: var(--font-body);
+    overflow-x: hidden;
+  }
+
+  /* Custom scrollbar */
+  ::-webkit-scrollbar {
+    width: 6px;
+  }
+  ::-webkit-scrollbar-track {
+    background: #0a0a0a;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: #27272a;
+    border-radius: 3px;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: #b11226;
+  }
+}
+
+.font-bebas {
+  font-family: 'Bebas Neue', sans-serif;
+  letter-spacing: 0.05em;
+}
+
+.font-playfair {
+  font-family: 'Playfair Display', serif;
+}
+
+.font-gujarati {
+  font-family: 'Noto Sans Gujarati', sans-serif;
+}
+
+/* Subtle dark ink grain texture */
+.ink-grain-overlay {
+  background-image: radial-gradient(rgba(255, 255, 255, 0.03) 1px, transparent 0);
+  background-size: 24px 24px;
+}
+
+.dark-luxury-gradient {
+  background: radial-gradient(circle at 50% 0%, rgba(177, 18, 38, 0.12) 0%, rgba(10, 10, 10, 0.98) 70%);
+}
+
+.red-glow {
+  box-shadow: 0 0 25px -5px rgba(177, 18, 38, 0.4);
+}
+
+.red-glow-subtle {
+  box-shadow: 0 4px 20px -2px rgba(177, 18, 38, 0.2);
+}
